@@ -1,20 +1,17 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using TMPro; // PENTING: Tambahkan ini untuk menggunakan TextMeshPro
+using TMPro; 
 
 public class GameData : MonoBehaviour
 {
-    //Variabel Baru: Drag objek TextMeshProUGUI ke sini di Inspector
+   
     public TextMeshProUGUI coinText;
-
-    // Data yang ingin kita simpan
     public int score;
     public int coins;
 
-    // Nomor Slot saat ini (diambil dari Main Menu)
     private int currentSlot;
 
-    // Kunci Dasar untuk Data
+    // Data
     private const string ScoreKey = "Score";
     private const string CoinsKey = "Coins";
     private const string HasDataKey = "HasData";
@@ -93,7 +90,7 @@ public class GameData : MonoBehaviour
         }
         else
         {
-            // Debugging jika kamu lupa drag objek
+            // Debug
             Debug.LogError("Coin Text UI (TextMeshProUGUI) belum di-drag ke slot 'Coin Text' di GameData.cs!");
         }
     }
