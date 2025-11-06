@@ -108,12 +108,12 @@ public class GameData : MonoBehaviour
 
             webRequest.SetRequestHeader("Content-Type", "application/json");
 
-            yield return webRequest.SendWebRequest();
+            yield return webRequest.SendWebRequest(); // Tunggu respons
 
             if (webRequest.result == UnityWebRequest.Result.Success)
             {
                 // ❗ SOLUSI UI/MENU: Simpan Koin dan HasData ke PlayerPrefs
-                // Ini penting agar MainMenuManager bisa melihat data terbaru tanpa memanggil API
+                // Data ini penting agar MainMenuManager bisa melihat data terbaru (lokal)
                 PlayerPrefs.SetInt(hasDataUniqueKey, 1);
                 PlayerPrefs.SetInt(coinsUniqueKey, this.coins); // SIMPAN KOIN LOKAL
                 PlayerPrefs.Save();
@@ -143,7 +143,10 @@ public class GameData : MonoBehaviour
     // FUNGSI WAJIB: Simpan dan Muat Scene dengan Aman
     public IEnumerator SaveAndLoadScene(string sceneName)
     {
+        // 1. Paksa tunggu SaveGame() selesai sebelum melanjutkan
         yield return StartCoroutine(SaveGame());
+
+        // 2. Muat Scene
         SceneManager.LoadScene(sceneName);
     }
 

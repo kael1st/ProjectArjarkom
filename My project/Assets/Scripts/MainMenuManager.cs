@@ -51,6 +51,13 @@ public class MainMenuManager : MonoBehaviour
         UpdateSlotDisplay();
     }
 
+    // Dipanggil saat objek diaktifkan (misalnya, kembali dari scene game)
+    void OnEnable()
+    {
+        // Ini memastikan UI diupdate saat kembali dari game utama
+        UpdateSlotDisplay();
+    }
+
     // Dipanggil oleh Tombol "Mulai"
     public void OpenSlots()
     {
@@ -109,7 +116,7 @@ public class MainMenuManager : MonoBehaviour
         }
 
         // 2. Tampilkan Nama di Panel Review untuk Konfirmasi Akhir
-        reviewNameText.text = "Kamu mau pakai nama " + currentInputName + ", sudah yakin?";
+        reviewNameText.text = "Kamu mau pakai nama " + currentInputName + " sudah yakin?";
 
         nameInputPanel.SetActive(false);
         nameReviewPanel.SetActive(true);
@@ -118,7 +125,7 @@ public class MainMenuManager : MonoBehaviour
     // Dipanggil oleh Tombol "YAKIN" di NameReviewPanel
     public void FinalConfirmName()
     {
-        // 1. Simpan Nama ke PlayerPrefs
+        // 1. Simpan Nama ke PlayerPrefs (akan digunakan GameData saat Load/Save)
         string nameKey = PlayerNameKey + selectedSlot;
         PlayerPrefs.SetString(nameKey, currentInputName);
         PlayerPrefs.Save();
@@ -144,7 +151,8 @@ public class MainMenuManager : MonoBehaviour
         slotsPanel.SetActive(false);
         deleteConfirmPanel.SetActive(true); // Tampilkan Panel Konfirmasi Hapus
 
-        // Opsional: Perbarui teks di panel konfirmasi (misalnya: Yakin hapus data Slot X?)
+        // Opsional: Perbarui teks di panel konfirmasi
+        // reviewNameText.text = "Yakin hapus data Slot " + slotNumber + "?"; 
     }
 
     // Dipanggil oleh Tombol "YA, HAPUS"
@@ -152,7 +160,7 @@ public class MainMenuManager : MonoBehaviour
     {
         if (slotToDelete == 0) return; // Kalau gak ada slot, batal
 
-        // Proses Hapus Data
+        // Proses Hapus Data (Hanya menghapus lokal, Server akan diabaikan)
         PlayerPrefs.DeleteKey(PlayerNameKey + slotToDelete);
         PlayerPrefs.DeleteKey(CoinsKey + slotToDelete);
         PlayerPrefs.DeleteKey(HasDataKey + slotToDelete);
@@ -198,7 +206,7 @@ public class MainMenuManager : MonoBehaviour
 
             if (PlayerPrefs.HasKey(hasDataKey))
             {
-                // SLOT TERISI: Tampilkan Nama dan Koin
+                // SLOT TERISI: Tampilkan Nama dan Koin dari PlayerPrefs (yang diupdate dari GameData)
                 string name = PlayerPrefs.GetString(PlayerNameKey + slotId, "Player");
                 int coins = PlayerPrefs.GetInt(CoinsKey + slotId, 0);
 
