@@ -3,15 +3,15 @@
   "WorkspaceRootPath": "C:\\Users\\kaelg\\OneDrive\\Documents\\GitHub\\ProjectArjarkom\\My project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\kaelg\\onedrive\\documents\\github\\projectarjarkom\\my project\\assets\\scripts\\gamedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\kaelg\\OneDrive\\Documents\\GitHub\\ProjectArjarkom\\My project\\assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\kaelg\\OneDrive\\Documents\\GitHub\\ProjectArjarkom\\My project\\assets\\scripts\\gamedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamedata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|c:\\users\\kaelg\\onedrive\\documents\\github\\projectarjarkom\\my project\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|C:\\Users\\kaelg\\OneDrive\\Documents\\GitHub\\ProjectArjarkom\\My project\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{32C3BDE6-E125-3128-82C1-25D0441455A3}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,29 +66,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "GameData.cs",
               "DocumentMoniker": "C:\\Users\\kaelg\\OneDrive\\Documents\\GitHub\\ProjectArjarkom\\My project\\Assets\\Scripts\\GameData.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameData.cs",
               "ToolTip": "C:\\Users\\kaelg\\OneDrive\\Documents\\GitHub\\ProjectArjarkom\\My project\\Assets\\Scripts\\GameData.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameData.cs",
-              "ViewState": "AgIAAF4AAAAAAAAAAAAAAG8AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAkwKgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-29T12:33:24.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainMenuManager.cs",
               "DocumentMoniker": "C:\\Users\\kaelg\\OneDrive\\Documents\\GitHub\\ProjectArjarkom\\My project\\Assets\\Scripts\\MainMenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenuManager.cs",
               "ToolTip": "C:\\Users\\kaelg\\OneDrive\\Documents\\GitHub\\ProjectArjarkom\\My project\\Assets\\Scripts\\MainMenuManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\MainMenuManager.cs",
-              "ViewState": "AgIAAIsAAAAAAAAAAAApwG8AAABMAAAAAAAAAA==",
+              "ViewState": "AgIAAM0AAAAAAAAAAAAgwNwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T12:18:18.301Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T12:18:18.301Z"
             },
             {
               "$type": "Document",
@@ -122,8 +121,7 @@
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAUwAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T09:52:45.155Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T09:52:45.155Z"
             },
             {
               "$type": "Document",
